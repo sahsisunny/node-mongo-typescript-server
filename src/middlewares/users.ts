@@ -3,6 +3,13 @@ import { merge } from 'lodash'
 
 import { getUserBySessionToken } from '../models/user'
 
+/**
+ * Check if user is authenticated
+ * @param request
+ * @param response
+ * @param next
+ * @returns
+ */
 export const isAuthenticated = async (
    req: express.Request,
    res: express.Response,

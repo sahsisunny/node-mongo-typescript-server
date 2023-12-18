@@ -7,6 +7,12 @@ import {
    getUserBySessionToken,
 } from '../models/user'
 
+/**
+ * Register a new user
+ * @param req : username, email, password
+ * @param res : message, user
+ * @returns
+ */
 export const register = async (req: express.Request, res: express.Response) => {
    try {
       const { username, email, password } = req.body
@@ -47,6 +53,12 @@ export const register = async (req: express.Request, res: express.Response) => {
    }
 }
 
+/**
+ * Login a user
+ * @param req : username, password
+ * @param res : message, user
+ * @returns
+ */
 export const login = async (req: express.Request, res: express.Response) => {
    try {
       const { username, password } = req.body
@@ -97,6 +109,12 @@ export const login = async (req: express.Request, res: express.Response) => {
    }
 }
 
+/**
+ * Logout a user
+ * @param req : sessionToken
+ * @param res : message
+ * @returns
+ */
 export const logout = async (req: express.Request, res: express.Response) => {
    try {
       res.cookie('MOONWALKER-AUTH', '', {
@@ -113,6 +131,12 @@ export const logout = async (req: express.Request, res: express.Response) => {
    }
 }
 
+/**
+ * Get the current user
+ * @param req : sessionToken
+ * @param res : message, user
+ * @returns
+ */
 export const self = async (req: express.Request, res: express.Response) => {
    try {
       const token = req.cookies['MOONWALKER-AUTH']

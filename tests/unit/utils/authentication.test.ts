@@ -1,4 +1,4 @@
-import { authentication, randomString } from '../../src/utils/authentication'
+import { authentication, randomString } from '../../../src/utils/authentication'
 
 describe('authentication', () => {
    it('should return random string', () => {

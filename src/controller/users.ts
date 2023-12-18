@@ -1,6 +1,12 @@
 import express from 'express'
 import { getUsers } from '../models/user'
 
+/**
+ * Get all users
+ * @param req : username, email, password
+ * @param res : message, user
+ * @returns
+ */
 export const getAllUsers = async (
    req: express.Request,
    res: express.Response,
