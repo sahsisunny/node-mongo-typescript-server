@@ -30,11 +30,11 @@ export const getUserBySessionToken = async (sessionToken: string) => {
   });
 };
 
-export const createUser = async (value: Record<string, any>) => {
+export const createUser = async (value: Record<string, unknown>) => {
   return await UserModel.create(value);
 };
 
-export const updateUser = async (user: Record<string, any>) => {
+export const updateUser = async (user: Record<string, unknown>) => {
   return await UserModel.updateOne({ _id: user._id }, user);
 };
 
