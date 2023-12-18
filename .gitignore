@@ -24,3 +24,6 @@
 
 # Yarn errors
 .yarn/*
+
+# test coverage
+/coverage
