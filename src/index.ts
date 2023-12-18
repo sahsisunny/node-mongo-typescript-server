@@ -6,7 +6,7 @@ import http from 'http';
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import mongoose from 'mongoose';
-import router  from './router';
+import router  from './routes';
 
 dotenv.config()
 const MONGO_URI = process.env.MONGO_URI;
