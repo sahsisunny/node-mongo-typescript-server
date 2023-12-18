@@ -15,7 +15,7 @@ const PORT = process.env.PORT;
 const app = express();
 
 app.use(cors({
-    origin: /https?:\/\/([a-z0-9]+[.])*netlify[.]app|https?:\/\/([a-z0-9]+[.])*netlify[.]com|https?:\/\/([a-z0-9]+[.])*localhost(:[0-9]+)?/,
+    origin: /https?:\/\/([a-z0-9]+[.])*netlify[.]app|https?:\/\/([a-z0-9]+[.])*netlify[.]com|https?:\/\/localhost(:[0-9]+)?/,
     credentials: true 
 }));
 
