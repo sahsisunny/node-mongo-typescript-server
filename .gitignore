@@ -21,3 +21,6 @@
 
 # env
 .env
+
+# coverage
+/coverage
